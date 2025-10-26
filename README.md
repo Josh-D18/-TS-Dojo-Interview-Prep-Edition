@@ -101,22 +101,6 @@ When you can hear that whisper before it appears, you’ve become a TypeScript w
 
 ---
 
-## 📦 Repo Structure
-
-ts-dojo-interview-prep/
-│
-├── 01-pro-essentials/ # Foundational type theory and OOP
-├── 02-type-transformations/ # Unions, conditions, template literals
-├── 03-generics/ # Generic functions, overloads, abstractions
-├── 04-advanced-patterns/ # Builder, branded, fluent, singleton patterns
-├── 05-react-types/ # Typed components, hooks, context, pitfalls
-│
-├── package.json
-├── tsconfig.json
-└── README.md (this file)
-
----
-
 ## 🏁 Your Mission
 
 Here’s your sprint plan (You do not have to follow it. You can work at your own pace):
