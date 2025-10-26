@@ -1,0 +1,14 @@
+{
+  "name": "ts-dojo-interview-prep",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ts-node-dev 01-pro-essentials/01-basic-types.ts",
+    "test": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "ts-node-dev": "^2.0.0",
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "^18.2.9"
+  }
+}
