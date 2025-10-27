@@ -15,11 +15,11 @@ function isString(value: unknown): value is string {
 }
 
 // Literal + "in" narrowing
-type Response =
+type Responses =
   | { status: "success"; data: string }
   | { status: "error"; message: string };
 
-function handleResponse(r: Response) {
+function handleResponse(r: Responses) {
   if (r.status === "success") {
     console.log(r.data);
   } else {
@@ -28,4 +28,10 @@ function handleResponse(r: Response) {
 }
 
 // Bonus: Create a lying type guard and see what havoc it causes
-// function isNumber(value: unknown): value is number { return true }
+function isNumber(value: unknown): value is number {
+  return true;
+}
+
+function isStringGuard(value: unknown): value is string {
+  return false
+}

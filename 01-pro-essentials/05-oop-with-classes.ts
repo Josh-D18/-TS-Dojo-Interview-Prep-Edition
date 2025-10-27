@@ -31,3 +31,20 @@ class Square extends Shape {
 // - Try making a new subclass (Triangle? Rectangle?)
 // - Use `protected` to experiment with inheritance
 // - Explain why `private` isn’t truly private at runtime
+
+class Triangle extends Shape {
+  protected side: number;
+  constructor(side: number) {
+    super("triangle");
+    this.side = side;
+  }
+
+  area(): number {
+    return this.side * 3;
+  }
+}
+
+const triangle = new Triangle(3);
+console.log(triangle.area());
+
+// -- private can still be accessed during runtime in some instances and truly is not private to the class. TypeScript’s private is structural — it only exists at compile time.Once compiled to JS, it becomes a normal property (you could even console.log(triangle['side'])).
